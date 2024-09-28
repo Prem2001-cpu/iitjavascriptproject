@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Chemical List</title>
+  </head>
+  <body>
+    <main class="table">
+      <section class="table_header">
+        <h2>Chemical supplies</h2>
+        <div class="input_group">
+          <img class="vector" src="./icons/addx.png" id="add_row" onclick="addRow()" title="Add new row" />
+          <img class="vector" src="./icons/down.png" id="move_down" onclick="moveDown()" title="Move row down" />
+          <img class="vector" src="./icons/up.png" id="move_up" onclick="moveUp()" title="Move row up" />
+          <img class="vector" src="./icons/darkDelete.png" id="delete_row" onclick="deleteRow()" title="Delete row" />
+          <img class="vector" src="./icons/darkRefresh.png" id="refresh_data" onclick="refreshData()" title="Refresh table" />
+          <img class="vector" src="./icons/darkSave.png" id="save_data" onclick="saveData()" title="Save data" />
+        </div>
+      </section>
+      <section class="table_body">
+        <table id="tableStruct">
+          <thead>
+            <tr>
+              <th><img src="./icons/greyCheck.png" class="vector1"></th>
+              <th>Sr. No.</th>
+              <th>Chemical Name</th>
+              <th>Vendor</th>
+              <th>Density</th>
+              <th>Viscosity</th>
+              <th>Packaging</th>
+              <th>Pack Size</th>
+              <th>Unit</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
